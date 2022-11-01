@@ -12,3 +12,10 @@
   border-style: double;
   line-break: anywhere;
 }
+
+code {
+  display: block;
+  background-color: #eee;
+  white-space: pre;
+  padding: 10px;
+}

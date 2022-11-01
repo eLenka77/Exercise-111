@@ -51,15 +51,143 @@
     <p class="answer" id="r1"></p>
 
     <h2>
-        <a href="https://code.mu/ru/javascript/book/prime/loops/for-of/"">Exercise 112 " Перебор массива циклом for-of в
+        <a href="https://code.mu/ru/javascript/book/prime/loops/for-of/">Exercise 112 "Перебор массива циклом for-of в
             JavaScript"</a>
     </h2>
     <ol>
         <li>
             <p>
-                Выведите в все элементы следующего массива:
+                Выведите все элементы следующего массива:<br>
+                <code>let arr = ['a', 'b', 'c', 'd', 'e'];</code>
             </p>
         </li>
+        <button onclick="checkResult4()">Запустить</button>
+    </ol>
+
+    <h2>
+        <a href="https://code.mu/ru/javascript/book/prime/loops/for-in/">Exercise 113 "Перебор объекта циклом
+            for-in в JavaScript"</a>
+    </h2>
+    <ol>
+        <li>
+            <p>
+                Выведите все ключи следующего объекта:<br>
+                <code>let obj = {x: 1, y: 2, z: 3};</code>
+            </p>
+        </li>
+
+        <button onclick="checkResult5()">Запустить 1</button>
+        <p>Ответ</p>
+        <p class="answer" id="r2"></p>
+
+        <li>
+            <p>
+                Выведите все элементы следующего объекта:<br>
+                <code>let obj = {x: 1, y: 2, z: 3};</code>
+            </p>
+        </li>
+
+        <button onclick="checkResult6()">Запустить 2</button>
+        <p>Ответ</p>
+        <p class="answer" id="r3"></p>
+    </ol>
+
+    <h2>
+        <a href="https://code.mu/ru/javascript/book/prime/loops/while/">Exercise 114 "Цикл while в JavaScript"</a>
+    </h2>
+    <ol>
+        <li>
+            <p>
+                Выведите числа от <input id="t7" type="number" min="0" max="100" />
+                до 100.
+            </p>
+        </li>
+
+        <button onclick="checkResult7()">Проверить</button>
+        <p>Ответ</p>
+        <p class="answer" id="r7"></p>
+
+        <li>
+            <p>
+                Выведите числа от 11 до 33.
+            </p>
+        </li>
+        <code id="code1"></code>
+
+        <button onclick="checkResult8()">Проверить</button>
+        <p>Ответ</p>
+        <p class="answer" id="r8"></p>
+
+        <li>
+            <p>
+                Дано число <input id="t9" type="number" min="0" max="100" /> Умножайте его на 3 столько раз, пока
+                результат умножения не станет больше 1000.
+            </p>
+        </li>
+    </ol>
+    <button onclick="checkResult9()">Проверить</button>
+    <p>Ответ</p>
+    <p class="answer" id="r9"></p>
+
+    <h2>
+        <a href="https://code.mu/ru/javascript/book/prime/loops/conditions/">Exercise 116 "Условия в циклах в
+            JavaScript"</a>
+    </h2>
+    <ol>
+        <li>
+            <p>
+                Дан следующий массив:
+                <code>let arr = [2, 5, 9, 15, 1, 4];</code>
+                Выведите те элементы массива, которые больше 3-х, но меньше 10.
+            </p>
+        </li>
+
+        <button onclick="checkResult10()">Проверить</button>
+        <p>Ответ</p>
+        <p class="answer" id="r10"></p>
+
+        <li>
+            <p>
+                Дан следующий объект:
+                <code>let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};</code>
+                Выведите те элементы объекта, значения которых - нечетные числа.
+            </p>
+        </li>
+
+        <button onclick="checkResult11()">Проверить</button>
+        <p>Ответ</p>
+        <p class="answer" id="r11"></p>
+    </ol>
+    <h2>
+        <a href="https://code.mu/ru/javascript/book/prime/loops/numbers-accumulation/">Exercise 117 "Накопление чисел в
+            циклах JavaScript"</a>
+    </h2>
+    <ol>
+        <li>
+            Найдите сумму четных чисел от 2 до 100.
+        </li>
+        <li>
+            Найдите сумму нечетных чисел от 1 до 99.
+        </li>
+        <li>
+            Найдите произведение целых чисел от 1 до 20.
+        </li>
+    </ol>
+
+    <div class=" input-block1">
+        <input id="t3" type="number" min="1" max="100" />
+    </div>
+
+    <div class="input-block2">
+        <input id="t4" type="number" min="1" max="100" />
+    </div>
+
+    <button onclick="checkResult12()">Сумма четных</button>
+    <button onclick="checkResult13()">Сумма нечетных</button>
+    <button onclick="checkResult14()">Произведение</button>
+    <p>Ответ</p>
+    <p class="answer" id="r12"></p>
+
 
 </body>
 
