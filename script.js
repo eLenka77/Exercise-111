@@ -281,6 +281,58 @@ function checkResult26() {
   }
 }
 
+function checkResult27() {
+  let result = document.getElementById("r27");
+  let str = String();
+  for (let i = 1; i <= 9; i++) {
+    for (j = 1; j <= 3; j++) {
+      str += i;
+      result.innerHTML = str;
+    }
+  }
+}
+
+function checkResult28() {
+  let result = document.getElementById("r28");
+  let str = String();
+
+  for (let i = 1; i <= 3; i++) {
+    for (j = 1; j <= 3; j++) {
+      str += String(i) + String(j) + " ";
+    }
+  }
+  result.innerHTML = str;
+}
+
+function checkResult29() {
+  let result = document.getElementById("r29");
+  let arr = ["a", "b", "c", "d", "e"];
+  flag = false;
+
+  for (let elem of arr) {
+    if (elem === "c") {
+      flag = true;
+      break;
+    }
+  }
+  if ((flag = true)) {
+    result.innerHTML = "+++";
+  } else if ((flag = false)) {
+    result.innerHTML = "---";
+  }
+}
+
+function checkResult30() {
+  let result = document.getElementById("r30");
+  let value = Number(document.getElementById("t30").value);
+
+  if (value % 1 == 0 && value % value == 0) {
+    result.innerHTML = "Простое";
+  } else {
+    result.innerHTML = "Не простое";
+  }
+}
+
 window.onload = function () {
   let codeBox1 = document.getElementById("code1");
   codeBox1.innerHTML = checkResult8.toString();
@@ -308,4 +360,16 @@ window.onload = function () {
 
   let codeBox26 = document.getElementById("code26");
   codeBox26.innerHTML = checkResult26.toString();
+
+  let codeBox27 = document.getElementById("code27");
+  codeBox27.innerHTML = checkResult27.toString();
+
+  let codeBox28 = document.getElementById("code28");
+  codeBox28.innerHTML = checkResult28.toString();
+
+  let codeBox29 = document.getElementById("code29");
+  codeBox29.innerHTML = checkResult29.toString();
+
+  let codeBox30 = document.getElementById("code30");
+  codeBox30.innerHTML = checkResult30.toString();
 };
